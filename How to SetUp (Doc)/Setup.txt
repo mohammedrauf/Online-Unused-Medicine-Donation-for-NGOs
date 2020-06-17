@@ -1,0 +1,4 @@
+$ git clone https://github.com/mohammedrauf/Online-Unused-Medicine-Donation-for-NGOs.git
+$ cd Online-Unused-Medicine-Donation-for-NGOs
+# install the project's dependencies
+
