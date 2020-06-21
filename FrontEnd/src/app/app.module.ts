@@ -9,6 +9,9 @@ import { CausesComponent } from './causes/causes.component';
 import { EventsComponent } from './events/events.component';
 import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
+import { EventDetailsComponent } from './event-details/event-details.component';
+import { ElementsComponent } from './elements/elements.component';
+import { SingleBlogComponent } from './single-blog/single-blog.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { ContactComponent } from './contact/contact.component';
     CausesComponent,
     EventsComponent,
     BlogComponent,
-    ContactComponent
+    ContactComponent,
+    EventDetailsComponent,
+    ElementsComponent,
+    SingleBlogComponent
   ],
   imports: [
     BrowserModule,

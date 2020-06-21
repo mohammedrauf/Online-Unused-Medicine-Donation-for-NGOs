@@ -6,6 +6,9 @@ import { CausesComponent } from './causes/causes.component';
 import { EventsComponent } from './events/events.component';
 import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
+import { EventDetailsComponent } from './event-details/event-details.component';
+import { ElementsComponent } from './elements/elements.component';
+import { SingleBlogComponent } from './single-blog/single-blog.component';
 
 
 const routes: Routes = [
@@ -14,7 +17,10 @@ const routes: Routes = [
   {path:'causes',component:CausesComponent},
   {path:'events',component:EventsComponent},
   {path:'blog',component:BlogComponent},
-  {path:'contact',component:ContactComponent}
+  {path:'contact',component:ContactComponent},
+  {path:'event-details',component:EventDetailsComponent},
+  {path:'elements',component:ElementsComponent},
+  {path:'single-blog',component:SingleBlogComponent}
 ];
 
 @NgModule({
