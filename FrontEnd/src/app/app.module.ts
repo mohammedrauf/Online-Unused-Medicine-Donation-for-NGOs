@@ -12,6 +12,8 @@ import { ContactComponent } from './contact/contact.component';
 import { EventDetailsComponent } from './event-details/event-details.component';
 import { ElementsComponent } from './elements/elements.component';
 import { SingleBlogComponent } from './single-blog/single-blog.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { SingleBlogComponent } from './single-blog/single-blog.component';
     ContactComponent,
     EventDetailsComponent,
     ElementsComponent,
-    SingleBlogComponent
+    SingleBlogComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
