@@ -1,10 +1,20 @@
-form
-{
-    background-image: url(../../assets/img/img1.jpg);
-   
-}
 
-.tb
+
+.bg-gra-03 {
+    
+    background-image: url(../../assets/img/img1.jpg);
+  }
+  .p-t-45 {
+    padding-top: 100px;
+  }
+  .p-b-50 {
+    padding-bottom: 0px;
+  }
+  .page-wrapper {
+    min-height: 100vh;
+   
+  }
+  .tb
 {
 	border:0px solid black;
 	width: 800px;
@@ -13,25 +23,26 @@ form
 	margin-top: 50px;
 	height: 300px;
 	padding: 10px;
-	opacity: 0.8;
+	opacity: 0.9;
 	background-repeat: no-repeat;
-    background-size: 100% 100%;
-    margin-left: auto;
-    margin-right: auto;
+	background-size: 100% 100%;
 	
 
 }
 .lo
 {
 	color: white;
-    font-style: bold;
-    text-align: center;
+	font-style: bold;
+	text-align: center;
+	font-family: 'Titillium Web', sans-serif; 
 }
 .up
 {
-	color: orange;
+	color: wheat;
 	font-size: 26px;
-	font-style: italic;
+    font-style: italic;
+    font-style: bold;
+    
 }
 .in
 {
@@ -44,7 +55,7 @@ form
 {
 	width: 100px;
 	height: 26px;
-	color: green;
+	color: gray;
 	border-radius: 10px;
 	font-weight: bold;
 }

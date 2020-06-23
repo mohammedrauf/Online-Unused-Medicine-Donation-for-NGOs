@@ -33,10 +33,8 @@ import { SigninComponent } from './signin/signin.component';
     HeaderComponent,
     FooterComponent,
     DonateComponent,
-    SigninComponent,
-    
-  
-    
+    SigninComponent 
+       
    
   ],
   imports: [
