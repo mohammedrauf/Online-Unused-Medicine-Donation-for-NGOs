@@ -14,7 +14,9 @@ import { ElementsComponent } from './elements/elements.component';
 import { SingleBlogComponent } from './single-blog/single-blog.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { LoginComponent } from './login/login.component';
+import { DonateComponent } from './donate/donate.component';
+import { SigninComponent } from './signin/signin.component';
+
 
 @NgModule({
   declarations: [
@@ -30,7 +32,12 @@ import { LoginComponent } from './login/login.component';
     SingleBlogComponent,
     HeaderComponent,
     FooterComponent,
-    LoginComponent
+    DonateComponent,
+    SigninComponent,
+    
+  
+    
+   
   ],
   imports: [
     BrowserModule,

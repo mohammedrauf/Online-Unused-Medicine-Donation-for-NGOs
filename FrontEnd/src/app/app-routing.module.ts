@@ -9,6 +9,9 @@ import { ContactComponent } from './contact/contact.component';
 import { EventDetailsComponent } from './event-details/event-details.component';
 import { ElementsComponent } from './elements/elements.component';
 import { SingleBlogComponent } from './single-blog/single-blog.component';
+import { DonateComponent } from './donate/donate.component';
+import { SigninComponent } from './signin/signin.component';
+
 
 
 const routes: Routes = [
@@ -20,7 +23,11 @@ const routes: Routes = [
   {path:'contact',component:ContactComponent},
   {path:'event-details',component:EventDetailsComponent},
   {path:'elements',component:ElementsComponent},
-  {path:'single-blog',component:SingleBlogComponent}
+  {path:'single-blog',component:SingleBlogComponent},
+  {path: 'donate',component:DonateComponent},
+  {path: 'signin', component:SigninComponent}
+  
+  
 ];
 
 @NgModule({

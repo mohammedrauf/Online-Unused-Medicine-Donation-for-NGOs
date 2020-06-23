@@ -1,0 +1,50 @@
+form
+{
+    background-image: url(../../assets/img/img1.jpg);
+   
+}
+
+.tb
+{
+	border:0px solid black;
+	width: 800px;
+	margin: 0px auto;
+	background-color: gray;
+	margin-top: 50px;
+	height: 300px;
+	padding: 10px;
+	opacity: 0.8;
+	background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-left: auto;
+    margin-right: auto;
+	
+
+}
+.lo
+{
+	color: white;
+    font-style: bold;
+    text-align: center;
+}
+.up
+{
+	color: orange;
+	font-size: 26px;
+	font-style: italic;
+}
+.in
+{
+	width: 400px;
+	height: 40px;
+	border-radius: 10px;
+	padding: 10px; 
+}
+.btn
+{
+	width: 100px;
+	height: 26px;
+	color: green;
+	border-radius: 10px;
+	font-weight: bold;
+}
