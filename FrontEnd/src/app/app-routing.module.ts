@@ -11,6 +11,7 @@ import { ElementsComponent } from './elements/elements.component';
 import { SingleBlogComponent } from './single-blog/single-blog.component';
 import { DonateComponent } from './donate/donate.component';
 import { SigninComponent } from './signin/signin.component';
+import { SignupComponent } from './signup/signup.component';
 
 
 
@@ -25,8 +26,8 @@ const routes: Routes = [
   {path:'elements',component:ElementsComponent},
   {path:'single-blog',component:SingleBlogComponent},
   {path: 'donate',component:DonateComponent},
-  {path: 'signin', component:SigninComponent}
-  
+  {path: 'signin', component:SigninComponent},
+  {path:'signup', component:SignupComponent}
   
 ];
 

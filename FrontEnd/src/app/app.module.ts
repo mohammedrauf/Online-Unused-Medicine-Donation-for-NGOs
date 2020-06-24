@@ -16,6 +16,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { DonateComponent } from './donate/donate.component';
 import { SigninComponent } from './signin/signin.component';
+import { SignupComponent } from './signup/signup.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { SigninComponent } from './signin/signin.component';
     HeaderComponent,
     FooterComponent,
     DonateComponent,
-    SigninComponent 
+    SigninComponent,
+    SignupComponent 
        
    
   ],

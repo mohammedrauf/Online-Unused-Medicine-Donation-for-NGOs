@@ -19,7 +19,7 @@
 	border:0px solid black;
 	width: 800px;
 	margin: 0px auto;
-	background-color: gray;
+	background-color: #3e4444;
 	margin-top: 50px;
 	height: 300px;
 	padding: 10px;
@@ -34,15 +34,15 @@
 	color: white;
 	font-style: bold;
 	text-align: center;
-	font-family: 'Titillium Web', sans-serif; 
+	font-family: serif; 
 }
 .up
 {
-	color: wheat;
+	color: orangered;
 	font-size: 26px;
-    font-style: italic;
+    font-family: serif;
     font-style: bold;
-    
+    padding-left: 25px;
 }
 .in
 {
@@ -54,8 +54,15 @@
 .btn
 {
 	width: 100px;
-	height: 26px;
-	color: gray;
+	height: 25px;
+	color: green;
 	border-radius: 10px;
 	font-weight: bold;
+	padding-bottom: 25px;
+	margin-right: 25px;
+}
+
+.ps
+{
+	padding-left: 25px;
 }
