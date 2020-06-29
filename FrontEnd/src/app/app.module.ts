@@ -18,7 +18,8 @@ import { DonateComponent } from './donate/donate.component';
 import { SigninComponent } from './signin/signin.component';
 import { SignupComponent } from './signup/signup.component';
 import { HttpClientModule } from '@angular/common/http';
-import { DataService } from './data.service';
+import { FormsModule } from '@angular/forms';
+
 
 
 @NgModule({
@@ -45,7 +46,8 @@ import { DataService } from './data.service';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    DataService,
+    FormsModule
+
   
   ],
   providers: [],

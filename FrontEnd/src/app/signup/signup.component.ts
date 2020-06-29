@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ApplicationRef } from '@angular/core';
 import { DataService } from '../data.service';
 import { Router } from '@angular/router';
 
@@ -24,34 +24,18 @@ export class SignupComponent implements OnInit {
   register()
   { var acFound=false;
     if(this.nameProp!="" && this.emailProp!="" && this.passwordProp!="" && this.mobileNoProp!="" && this.addressProp!="" && this.areaProp!="" ){
-    this.ds.signin()
+    this.ds.register({name:this.nameProp, email:this.emailProp, password:this.passwordProp, mobile:this.mobileNoProp, address:this.addressProp, area:this.areaProp})
     .subscribe((response)=>{
       if(response.status=="ok")
       {
-
-        response.data.forEach(element => {
-          if(element.email==this.emailProp){
-        
-            console.log(element.email,this.emailProp)
-          acFound=true
-          }
-        
-        });
-      }
-      if(acFound){
-        alert("Account Already Exist")
+          alert("registration successfull ")
       }
       else{
-        this.ds.register({name:this.nameProp, email:this.emailProp, password:this.passwordProp ,phone:this.mobileNoProp , address:this.addressProp ,area:this.areaProp})
-        .subscribe((response)=>{
-          if(response.status=="ok")
-          {
-              alert("Sign Up Successfull you will be redirected to sign in ");
-              this.router.navigate(['/home/signin']);
-          }
-        })
+        alert(response.data);
       }
-    })
+     
+       
+      })
   }
   else{
     alert("fill all filds!")

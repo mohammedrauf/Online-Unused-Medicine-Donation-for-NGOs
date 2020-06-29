@@ -33,17 +33,27 @@ app.post('/signup', bodyParser.json() ,(req,res)=>{
         const collection = connection.db('medicine_donation').collection('users');
 
 
-        collection.insert(req.body, (err,result)=>{
-            if(!err)
+
+
+        collection.find(req.body.email).toArray((err,docs)=>{
+            if(!err && docs.length>0)
             {
-                res.send({status:"ok", data:"signup successfull for "+req.body.name});
+                res.send({status:"failed", data:"already exist"});
             }
             else{
-                res.send({status:"failed", data:"could not register"});
+                  collection.insert(req.body, (err,result)=>{
+                    if(!err)
+                    {
+                        res.send({status:"ok", data:"signup successfull for "+req.body.name});
+                    }
+                    else{
+                        res.send({status:"failed", data:"could not register"});
+                    }
+                })
+        
+
             }
         })
-
-
 
    });
 app.post('/signin', bodyParser.json() ,(req,res)=>{ 
