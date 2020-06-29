@@ -17,6 +17,8 @@ import { FooterComponent } from './footer/footer.component';
 import { DonateComponent } from './donate/donate.component';
 import { SigninComponent } from './signin/signin.component';
 import { SignupComponent } from './signup/signup.component';
+import { HttpClientModule } from '@angular/common/http';
+import { DataService } from './data.service';
 
 
 @NgModule({
@@ -35,13 +37,16 @@ import { SignupComponent } from './signup/signup.component';
     FooterComponent,
     DonateComponent,
     SigninComponent,
-    SignupComponent 
+    SignupComponent
        
    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    DataService,
+  
   ],
   providers: [],
   bootstrap: [AppComponent]

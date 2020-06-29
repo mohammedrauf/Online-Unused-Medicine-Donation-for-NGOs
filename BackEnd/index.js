@@ -4,8 +4,11 @@ const cors  = require('cors');
 const MongoClient = require('mongodb').MongoClient;
 const ObjectId = require('mongodb').ObjectId;
 
-var client = new MongoClient('mongodb://localhost:27017/chatroom', {useNewUrlParser:true})
 
+//var client = new MongoClient('mongodb://localhost:27017/chatroom', {useNewUrlParser:true})
+var client = new MongoClient('mongodb+srv://mohammedrauf:rauf786@cluster0-rsk2r.mongodb.net/medicine_donation?retryWrites=true&w=majority', {useNewUrlParser:true})
+// mongodb+srv://mohammedrauf:<password>@cluster0-rsk2r.mongodb.net/<dbname>?retryWrites=true&w=majority
+// mongodb+srv://nareshmali26:<password>@newsdb-uxy6l.mongodb.net/<dbname>?retryWrites=true&w=majority
 var connection;
 client.connect((err, con)=>{
         if(!err)
@@ -25,9 +28,9 @@ const app = express();
 
 app.use(cors());
 
-app.post('/sign-up', bodyParser.json() ,(req,res)=>{  
+app.post('/signup', bodyParser.json() ,(req,res)=>{  
 
-        const collection = connection.db('chatroom').collection('users');
+        const collection = connection.db('medicine_donation').collection('users');
 
 
         collection.insert(req.body, (err,result)=>{
@@ -43,11 +46,11 @@ app.post('/sign-up', bodyParser.json() ,(req,res)=>{
 
 
    });
-app.post('/sign-in', bodyParser.json() ,(req,res)=>{ 
+app.post('/signin', bodyParser.json() ,(req,res)=>{ 
 
 
 
-    const collection = connection.db('chatroom').collection('users');
+    const collection = connection.db('medicine_donation').collection('users');
 
 
     collection.find(req.body).toArray((err,docs)=>{
@@ -61,7 +64,6 @@ app.post('/sign-in', bodyParser.json() ,(req,res)=>{
     })
 
     });
-
 
 
 app.listen(3000, ()=>{

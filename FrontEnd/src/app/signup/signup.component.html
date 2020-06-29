@@ -12,7 +12,7 @@
                             <div >
                                 <div>
                                     <div class="input-group-desc">
-                                        <input class="input--style-5" type="text" name="first_name">
+                                        <input class="input--style-5" [(ngModel)]="nameProp" type="text" name="first_name">
                                     </div>
                                 </div>
                             </div>
@@ -22,7 +22,7 @@
                         <div class="name">E-mail</div>
                         <div class="value">
                             <div class="input-group">
-                                <input class="input--style-5" type="email" name="email">
+                                <input class="input--style-5" [(ngModel)]="emailProp" type="email" name="email">
                             </div>
                         </div>
                     </div>
@@ -30,7 +30,7 @@
                         <div class="name">Password</div>
                         <div class="value">
                             <div class="input-group">
-                                <input class="input--style-5" type="password" name="details">
+                                <input class="input--style-5" [(ngModel)]="passwordProp"  type="password" name="details">
                             </div>
                         </div>
                     </div>
@@ -38,7 +38,7 @@
                         <div class="name">Address</div>
                         <div class="value">
                             <div class="input-group">
-                                <input class="input--style-5" type="text" name="address">
+                                <input class="input--style-5" [(ngModel)]="addressProp"  type="text" name="address">
                             </div>
                         </div>
                     </div>
@@ -48,13 +48,13 @@
                             <div class="row row-refine">
                                 <div class="col-3">
                                     <div class="input-group-desc">
-                                        <input class="input--style-5" type="text" name="area_code">
+                                        <input class="input--style-5" [(ngModel)]="areaProp" type="text" name="area_code">
                                         <label class="label--desc">Area Code</label>
                                     </div>
                                 </div>
                                 <div class="col-9">
                                     <div class="input-group-desc">
-                                        <input class="input--style-5" type="text" name="phone">
+                                        <input class="input--style-5" [(ngModel)]="mobileNoProp"  type="text" name="phone">
                                         <label class="label--desc">Phone Number</label>
                                     </div>
                                 </div>
@@ -63,7 +63,7 @@
                     </div>
 
                     <div>
-                        <button class="btn btn--radius-2 btn--red" type="submit">Register</button>
+                        <button class="btn btn--radius-2 btn--red" type="submit" (click)="register()" >Register</button>
                     </div>
                 </form>
             </div>
