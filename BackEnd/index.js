@@ -7,8 +7,9 @@ const ObjectId = require('mongodb').ObjectId;
 
 //var client = new MongoClient('mongodb://localhost:27017/chatroom', {useNewUrlParser:true})
 var client = new MongoClient('mongodb+srv://mohammedrauf:rauf786@cluster0-rsk2r.mongodb.net/medicine_donation?retryWrites=true&w=majority', {useNewUrlParser:true})
-// mongodb+srv://mohammedrauf:<password>@cluster0-rsk2r.mongodb.net/<dbname>?retryWrites=true&w=majority
-// mongodb+srv://nareshmali26:<password>@newsdb-uxy6l.mongodb.net/<dbname>?retryWrites=true&w=majority
+
+
+
 var connection;
 client.connect((err, con)=>{
         if(!err)
@@ -83,7 +84,7 @@ app.post('/donate', bodyParser.json() ,(req,res)=>{
         collection.insert(req.body, (err,result)=>{
             if(!err)
             {
-                res.send({status:"ok", data:"signup successfull for "+req.body.name});
+                res.send({status:"ok", data:"donation successfull for "+req.body.name});
             }
             else{
                 res.send({status:"failed", data:"could not register"});
@@ -94,6 +95,14 @@ app.post('/donate', bodyParser.json() ,(req,res)=>{
     
     });
     
+
+
+// get element
+
+
+
+
+
 
 
 
