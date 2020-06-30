@@ -11,17 +11,18 @@
             </tr>
             <tr>
                 <td class="up">E-mail</td>
-                <td><input type="email" name="" class="in" placeholder="Enter E-mail"/></td>
+                <td><input type="email" name="" class="in" [(ngModel)]="emailProp" [ngModelOptions]="{standalone: true}"placeholder="Enter E-mail"/></td>
             </tr>
             <tr>
                 <td class="up">Password:</td>
-                <td><input type="Password" name="" class="in" placeholder="Enter Password"/></td>
+                <td><input type="Password" name="" class="in" [(ngModel)]="passwordProp" [ngModelOptions]="{standalone: true}" placeholder="Enter Password"/></td>
             </tr>
           
             <tr>
                 <td></td>
                 <td>
-                    <input type="button" value="submit" name=""  (click)="login()"  class="btn"/>
+                    <!-- <input type="button" (click)="signin()"  value="submit" name=""  class="btn"/> -->
+                    <button (click)="signin()" class="btn">submit</button>
                     <input type="reset" value="reset" name="" class="btn"/>
                 </td>
             </tr>
