@@ -26,6 +26,9 @@ export class SignupComponent implements OnInit {
     if(this.nameProp!="" && this.emailProp!="" && this.passwordProp!="" && this.mobileNoProp!="" && this.addressProp!="" && this.areaProp!="" ){
     this.ds.register({name:this.nameProp, email:this.emailProp, password:this.passwordProp, mobile:this.mobileNoProp, address:this.addressProp, area:this.areaProp})
     .subscribe((response)=>{
+
+      alert(JSON.stringify(response));
+
       if(response.status=="ok")
       {
           alert("registration successfull ")

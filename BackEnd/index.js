@@ -30,14 +30,14 @@ app.use(cors());
 
 app.post('/signup', bodyParser.json() ,(req,res)=>{  
 
+    // console.log("signup api called");
+    // console.log(req.body);
         const collection = connection.db('medicine_donation').collection('users');
 
-
-
-
-        collection.find(req.body.email).toArray((err,docs)=>{
+        collection.find({email:req.body.email}).toArray((err,docs)=>{
             if(!err && docs.length>0)
             {
+                console.log(docs);
                 res.send({status:"failed", data:"already exist"});
             }
             else{
@@ -56,7 +56,7 @@ app.post('/signup', bodyParser.json() ,(req,res)=>{
         })
 
    });
-app.post('/signun', bodyParser.json() ,(req,res)=>{ 
+app.post('/signin', bodyParser.json() ,(req,res)=>{ 
 
 
 

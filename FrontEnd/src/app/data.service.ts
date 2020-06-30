@@ -13,12 +13,13 @@ export class DataService {
 
   register(data):any
    {
+     alert(JSON.stringify(data));
     return this.http.post(this.baseURL+"/signup", data);
   }
 
-  signin():any  
+  signin(data):any  
   {
     // return this.http.post(this.baseURL+"/sign-in", data);
-    return this.http.get(this.baseURL+"/signin");
+    return this.http.post(this.baseURL+"/signin",data);
   }
 }

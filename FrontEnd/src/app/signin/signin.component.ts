@@ -22,24 +22,17 @@ export class SigninComponent implements OnInit {
      
      if(this.emailProp !="" && this.passwordProp!=""){
       // {email:this.emailProp, password:this.passwordProp}
-      this.ds.signin()
+      this.ds.signin({email:this.emailProp, password:this.passwordProp})
       .subscribe((response)=>{
        
         if(response.status=="ok")
         {
-
-          response.data.forEach(element => {            
-            if(element.email==this.emailProp && element.password==this.passwordProp){
-              acFound=true
-              console.log(element.email, element.password)
-              localStorage.setItem('email', element.email);
-              localStorage.setItem('name', element.name);
-              this.router.navigate(['/home']); 
+              localStorage.setItem('email', response.data[0].email);
+              localStorage.setItem('name',  response.data[0].name);
+              this.router.navigate(['/']); 
               
-            }
-          }
-          
-            );
+     
+        
         }
         if(acFound==false) {
           alert("somthing went wrong")
