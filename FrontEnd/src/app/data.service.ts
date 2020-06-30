@@ -22,4 +22,15 @@ export class DataService {
     // return this.http.post(this.baseURL+"/sign-in", data);
     return this.http.post(this.baseURL+"/signin",data);
   }
+  donate(data):any
+  {
+    return this.http.post(this.baseURL+"/donate",data);
+  }
+
+
 }
+
+// donate(data):any
+//   {
+//     return this.http.post(this.baseURL+"/donate",data);
+//   }

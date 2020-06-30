@@ -74,6 +74,26 @@ app.post('/signin', bodyParser.json() ,(req,res)=>{
     })
 
     });
+   
+app.post('/donate', bodyParser.json() ,(req,res)=>{  
+
+        const collection = connection.db('medicine_donation').collection('doner');
+    
+    
+        collection.insert(req.body, (err,result)=>{
+            if(!err)
+            {
+                res.send({status:"ok", data:"signup successfull for "+req.body.name});
+            }
+            else{
+                res.send({status:"failed", data:"could not register"});
+            }
+        })
+    
+    
+    
+    });
+    
 
 
 

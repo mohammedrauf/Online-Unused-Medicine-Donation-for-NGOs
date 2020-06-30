@@ -12,13 +12,13 @@
                             <div class="row row-space">
                                 <div>
                                     <div class="input-group-desc">
-                                        <input class="input--style-5" type="text" name="first_name">
+                                        <input class="input--style-5" [(ngModel)]="dfnameProp" type="text" name="first_name">
                                         <label class="label--desc">first name</label>
                                     </div>
                                 </div>
                                 <div >
                                     <div class="input-group-desc">
-                                        <input class="input--style-5" type="text" name="last_name">
+                                        <input class="input--style-5" [(ngModel)]="dlnameProp" type="text" name="last_name">
                                         <label class="label--desc">last name</label>
                                     </div>
                                 </div>
@@ -29,7 +29,7 @@
                         <div class="name">E-mail</div>
                         <div class="value">
                             <div class="input-group">
-                                <input class="input--style-5" type="email" name="email">
+                                <input class="input--style-5" [(ngModel)]="demailProp" type="email" name="email">
                             </div>
                         </div>
                     </div>
@@ -37,7 +37,7 @@
                         <div class="name">Medicine name & details</div>
                         <div class="value">
                             <div class="input-group">
-                                <input class="input--style-5" type="text" name="details">
+                                <input class="input--style-5" [(ngModel)]="dmedicineProp" type="text" name="details">
                             </div>
                         </div>
                     </div>
@@ -45,7 +45,7 @@
                         <div class="name">Address</div>
                         <div class="value">
                             <div class="input-group">
-                                <input class="input--style-5" type="text" name="address">
+                                <input class="input--style-5" [(ngModel)]="daddProp" type="text" name="address">
                             </div>
                         </div>
                     </div>
@@ -55,13 +55,13 @@
                             <div class="row row-refine">
                                 <div class="col-3">
                                     <div class="input-group-desc">
-                                        <input class="input--style-5" type="text" name="area_code">
+                                        <input class="input--style-5" type="text" [(ngModel)]="dareaProp" name="area_code">
                                         <label class="label--desc">Area Code</label>
                                     </div>
                                 </div>
                                 <div class="col-9">
                                     <div class="input-group-desc">
-                                        <input class="input--style-5" type="text" name="phone">
+                                        <input class="input--style-5" type="text" [(ngModel)]="dphoneProp" name="phone">
                                         <label class="label--desc">Phone Number</label>
                                     </div>
                                 </div>
@@ -74,7 +74,7 @@
                             <div class="input-group">
                                 <div class="rs-select2 js-select-simple select--no-search">
                                     <select name="deleivery">
-                                        <option disabled="disabled" selected="selected">Choose option</option>
+                                        <option disabled="disabled" selected="selected" >Choose option</option>
                                         <option>Home pick up</option>
                                         <option>Manage yourself</option>
                                     </select>
@@ -85,7 +85,7 @@
                     </div>
 
                     <div>
-                        <button class="btn btn--radius-2 btn--red" type="submit">Donate</button>
+                        <button class="btn btn--radius-2 btn--red" type="submit" (click)="donate()">Donate</button>
                     </div>
                 </form>
             </div>
