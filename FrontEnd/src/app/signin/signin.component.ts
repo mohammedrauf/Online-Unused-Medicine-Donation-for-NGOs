@@ -29,12 +29,12 @@ export class SigninComponent implements OnInit {
         {
               localStorage.setItem('email', response.data[0].email);
               localStorage.setItem('name',  response.data[0].name);
-              this.router.navigate(['/']); 
+              this.router.navigate(['/dashboard']); 
               
      
         
         }
-        if(acFound==false) {
+        else{
           alert("somthing went wrong")
         }
         

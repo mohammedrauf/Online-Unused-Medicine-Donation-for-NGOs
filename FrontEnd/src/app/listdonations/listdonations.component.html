@@ -1,0 +1,49 @@
+<table>
+    <tr>
+        <th>
+                Name
+        </th>
+        <th>
+                  email
+        </th>
+        <th>
+                  address
+        </th>
+        <th>
+                     mobile
+        </th>
+        <th>
+             medicine
+        </th>
+        <th>
+            area
+       </th>
+       <th>
+            Action
+        </th>
+    </tr>
+    <tr *ngFor="let d of donations"> 
+        <td>
+                {{d.firstname}} {{d.lastname}}
+        </td>
+        <td>
+                  {{d.email}}
+        </td>
+        <td>
+                  {{d.address}}
+        </td>
+        <td>
+                     {{d.mobile}}
+        </td>
+        <td>
+             {{d.medecine}}
+        </td>
+        <td>
+            {{d.area}}
+       </td>
+       <td>
+                <button (click)="processThisRequest(d)" >Process</button>
+         </td>
+    </tr>
+    
+</table>

@@ -73,10 +73,9 @@
                         <div class="value">
                             <div class="input-group">
                                 <div class="rs-select2 js-select-simple select--no-search">
-                                    <select name="deleivery">
-                                        <option disabled="disabled" selected="selected" >Choose option</option>
-                                        <option>Home pick up</option>
-                                        <option>Manage yourself</option>
+                                    <select name="deleivery" [(ngModel)]="deleiveryoptionProp">
+                                        <option value="Home pick up">Home pick up</option>
+                                        <option value="Manage yourself">Manage yourself</option>
                                     </select>
                                     <div class="select-dropdown"></div>
                                 </div>

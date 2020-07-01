@@ -19,6 +19,11 @@ import { SigninComponent } from './signin/signin.component';
 import { SignupComponent } from './signup/signup.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { ListdonationsComponent } from './listdonations/listdonations.component';
+import { WebsiteComponent } from './website/website.component';
+import { ListprocesseddonationComponent } from './listprocesseddonation/listprocesseddonation.component';
+import { InstructiondashboardComponent } from './instructiondashboard/instructiondashboard.component';
 
 
 
@@ -38,7 +43,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     FooterComponent,
     DonateComponent,
     SigninComponent,
-    SignupComponent
+    SignupComponent,
+    DashboardComponent,
+    ListdonationsComponent,
+    WebsiteComponent,
+    ListprocesseddonationComponent,
+    InstructiondashboardComponent
        
    
   ],

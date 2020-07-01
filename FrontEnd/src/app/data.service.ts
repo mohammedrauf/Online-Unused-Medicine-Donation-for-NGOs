@@ -27,6 +27,17 @@ export class DataService {
     return this.http.post(this.baseURL+"/donate",data);
   }
 
+  listdonations():any
+  {
+    return this.http.get(this.baseURL+'/listdonations');
+  }
+
+  processDonation(d):any
+  {
+    return this.http.post(this.baseURL+'/processDonation',d);
+  }
+  
+
 
 }
 

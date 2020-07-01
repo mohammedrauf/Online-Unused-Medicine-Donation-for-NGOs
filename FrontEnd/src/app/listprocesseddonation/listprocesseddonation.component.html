@@ -1,0 +1,45 @@
+<table>
+    <tr>
+        <th>
+                Name
+        </th>
+        <th>
+                  email
+        </th>
+        <th>
+                  address
+        </th>
+        <th>
+                     mobile
+        </th>
+        <th>
+             medicine
+        </th>
+        <th>
+            area
+       </th>
+    
+    </tr>
+    <tr *ngFor="let d of donations"> 
+        <td>
+                {{d.firstname}} {{d.lastname}}
+        </td>
+        <td>
+                  {{d.email}}
+        </td>
+        <td>
+                  {{d.address}}
+        </td>
+        <td>
+                     {{d.mobile}}
+        </td>
+        <td>
+             {{d.medicine}}
+        </td>
+        <td>
+            {{d.area}}
+       </td>
+     
+    </tr>
+    
+</table>
