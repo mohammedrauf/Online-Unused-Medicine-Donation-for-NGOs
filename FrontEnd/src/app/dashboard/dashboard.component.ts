@@ -15,7 +15,7 @@ export class DashboardComponent implements OnInit {
 
   logout()
   {
-    alert("in logout");
+    alert("logout");
     localStorage.removeItem('email');
     this.router.navigate(['/']);
     
