@@ -24,7 +24,7 @@ export class DonateComponent implements OnInit {
   donate(){
     alert(this.deleiveryoptionProp);
     if(this.dfnameProp!="" && this.demailProp!="" && this.dlnameProp!="" && this.dphoneProp!="" && this.daddProp!="" && this.dareaProp!="" && this.dmedicineProp!="" ){
-      this.ds.donate({firstname:this.dfnameProp, email:this.demailProp, lastname:this.dlnameProp, mobile:this.dphoneProp, address:this.daddProp, area:this.dareaProp, medecine:this.dmedicineProp, deliveryOption:this.deleiveryoptionProp, status:0, ngoEmail:""})
+      this.ds.donate({firstname:this.dfnameProp,lastname:this.dlnameProp ,email:this.demailProp,  mobile:this.dphoneProp, address:this.daddProp, area:this.dareaProp, medecine:this.dmedicineProp, deliveryOption:this.deleiveryoptionProp, status:0, ngoEmail:""})
       .subscribe((response)=>{
   
         alert(JSON.stringify(response));
