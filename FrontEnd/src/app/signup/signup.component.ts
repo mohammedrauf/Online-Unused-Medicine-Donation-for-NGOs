@@ -32,6 +32,7 @@ export class SignupComponent implements OnInit {
       if(response.status=="ok")
       {
           alert("registration successfull ")
+          this.router.navigate(['/signin']); 
       }
       else{
         alert(response.data);
