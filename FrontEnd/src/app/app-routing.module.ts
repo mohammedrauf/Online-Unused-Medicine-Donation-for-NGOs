@@ -26,7 +26,7 @@ const routes: Routes = [
     {path:'about',component:AboutComponent},
     {path:'causes',component:CausesComponent},
     {path:'events',component:EventsComponent},
-    {path:'blog',component:BlogComponent},
+    // {path:'blog',component:BlogComponent},
     {path:'contact',component:ContactComponent},
     {path:'event-details',component:EventDetailsComponent},
     {path:'elements',component:ElementsComponent},
